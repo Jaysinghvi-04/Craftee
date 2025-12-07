@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAFTEE - Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">CRAFT<span>EE</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#shop">Shop</a></li>
+                <li><a href="index.html#collections">Collections</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#lookbook">Lookbook</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Checkout</h2>
+            </div>
+            <div class="checkout-grid">
+                <div class="checkout-form">
+                    <div class="form-section">
+                        <h3>Contact Information</h3>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-section">
+                        <h3>Shipping Information</h3>
+                        <form id="shipping-form">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="text" name="address" placeholder="Address" required>
+                            <input type="text" name="apartment" placeholder="Apartment, suite, etc. (optional)">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                <input type="text" name="city" placeholder="City" required>
+                                <input type="text" name="state" placeholder="State" required>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                <input type="text" name="country" placeholder="Country" value="India" required>
+                                <input type="text" name="zip" placeholder="ZIP Code" required>
+                            </div>
+                            <input type="text" name="phone" placeholder="Phone">
+                        </form>
+                    </div>
+                    <div class="form-section">
+                        <h3>Payment Information</h3>
+                        <form id="payment-form">
+                            <input type="text" name="card-number" placeholder="Card Number" required>
+                            <input type="text" name="card-name" placeholder="Name on Card" required>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                                <input type="text" name="card-expiry" placeholder="MM / YY" required>
+                                <input type="text" name="card-cvc" placeholder="CVC" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="order-summary-items">
+                        <!-- Order summary will be dynamically inserted here -->
+                    </div>
+                    <div class="summary-totals">
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span class="summary-subtotal">₹0.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span class="summary-total">₹0.00</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="place-order-btn">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">CRAFT<span>EE</span></a>
+                <p>Bold, Minimal, and Aesthetic Streetwear for the New Generation. Express your attitude with premium-quality graphic tees that speak personality.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns & Exchange</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 CRAFTEE. All Rights Reserved. Made with ❤️ in Udaipur</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-google-pay"></i>
+                <i class="fab fa-apple-pay"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

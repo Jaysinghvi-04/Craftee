@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAFTEE - Bold, Minimal & Aesthetic Streetwear | Udaipur</title>
+    <meta name="description" content="CRAFTEE - Modern streetwear t-shirt brand in Udaipur. Bold, minimal, and aesthetic graphic tees for teens and trendsetters.">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" defer>
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        🔥 <span>FREE SHIPPING</span> on orders above ₹999 | Use code <span>CRAFTEE20</span> for 20% off!
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">CRAFT<span>EE</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#lookbook">Lookbook</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-close" onclick="toggleMenu()">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#shop" onclick="toggleMenu()">Shop</a></li>
+            <li><a href="#collections" onclick="toggleMenu()">Collections</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#lookbook" onclick="toggleMenu()">Lookbook</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-badge">New Collection 2024</span>
+                <h1>BOLD. MINIMAL.<br><span>AESTHETIC.</span></h1>
+                <p>Premium streetwear for the new generation. Express your attitude with our unique graphic tees that blend minimal design with bold creativity.</p>
+                <div class="hero-buttons">
+                    <a href="#shop" class="btn btn-white">Shop Now</a>
+                    <a href="#collections" class="btn btn-secondary" style="border-color: white; color: white;">View Collections</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=500&h=600&fit=crop" alt="CRAFTEE Streetwear">
+                <div class="floating-tag tag-1">
+                    <h4>500+</h4>
+                    <p>Unique Designs</p>
+                </div>
+                <div class="floating-tag tag-2">
+                    <h4>100%</h4>
+                    <p>Premium Cotton</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>10K+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Unique Designs</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Premium Quality</p>
+            </div>
+            <div class="stat-item">
+                <h3>4.9★</h3>
+                <p>Customer Rating</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2>SHOP BY STYLE</h2>
+                <p>Find your perfect vibe from our curated collections</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&h=500&fit=crop" alt="Minimal Collection">
+                    <div class="category-overlay">
+                        <h3>MINIMAL</h3>
+                        <p>Clean & Simple Designs</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=400&h=500&fit=crop" alt="Graphic Collection">
+                    <div class="category-overlay">
+                        <h3>GRAPHIC</h3>
+                        <p>Bold Statement Pieces</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop" alt="Aesthetic Collection">
+                    <div class="category-overlay">
+                        <h3>AESTHETIC</h3>
+                        <p>Artistic & Trendy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <h2>TRENDING NOW</h2>
+                <p>Our most popular picks that everyone's loving</p>
+            </div>
+            <div class="products-grid">
+                <!-- Products will be loaded dynamically here -->
+            </div>
+            <div class="view-all">
+                <a href="#" class="btn btn-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content container">
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=600&fit=crop" alt="CRAFTEE Store" class="primary-image">
+                <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=300&h=350&fit=crop" alt="CRAFTEE Collection" class="secondary-image">
+            </div>
+            <div class="about-text">
+                <h2>WEAR YOUR <span>VIBE</span></h2>
+                <p>CRAFTEE is more than just a clothing brand – it's a movement. Born in the heart of Udaipur, we're redefining streetwear for the bold, the creative, and the unapologetically unique.</p>
+                <p>Every piece we create is a canvas for self-expression. From funky prints to aesthetic minimalism, our designs speak to those who dare to stand out while staying effortlessly cool.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h4>Premium Cotton</h4>
+                            <p>100% organic cotton for ultimate comfort</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <div>
+                            <h4>Unique Designs</h4>
+                            <p>Original artwork by local artists</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-recycle"></i>
+                        <div>
+                            <h4>Eco-Friendly</h4>
+                            <p>Sustainable printing methods</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h4>Made with Love</h4>
+                            <p>Handcrafted in Udaipur</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 40px;">
+                    <a href="#" class="btn btn-primary">Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Section -->
+    <section class="lookbook" id="lookbook">
+        <div class="container">
+            <div class="section-header">
+                <h2>LOOKBOOK</h2>
+                <p>Get inspired by our latest street style shots</p>
+            </div>
+            <div class="lookbook-grid">
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=800&fit=crop" alt="Lookbook 1">
+                    <div class="lookbook-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=400&h=400&fit=crop" alt="Lookbook 2">
+                    <div class="lookbook-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=400&h=400&fit=crop" alt="Lookbook 3">
+                    <div class="lookbook-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1506634572416-48cdfe530110?w=400&h=400&fit=crop" alt="Lookbook 4">
+                    <div class="lookbook-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?w=400&h=400&fit=crop" alt="Lookbook 5">
+                    <div class="lookbook-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>WHAT PEOPLE SAY</h2>
+                <p>Real reviews from our amazing customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Customer">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The quality is insane! Super soft cotton and the print hasn't faded even after multiple washes. Definitely my go-to brand now."</p>
+                    <h4>Arjun Sharma</h4>
+                    <span>College Student, Delhi</span>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Customer">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Finally found a brand that gets Gen-Z fashion! The designs are so unique and I always get compliments when I wear CRAFTEE."</p>
+                    <h4>Priya Patel</h4>
+                    <span>Fashion Blogger, Mumbai</span>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="Customer">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Visited their store in Udaipur - amazing collection! The staff was super helpful and the vibe of the store matches the brand perfectly."</p>
+                    <h4>Rahul Verma</h4>
+                    <span>Graphic Designer, Jaipur</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Location -->
+    <section class="location" id="contact">
+        <div class="location-content container">
+            <div class="location-info">
+                <h2>VISIT OUR STORE</h2>
+                <div class="location-details">
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>2, Moksh Marg, Shastri Circle,<br>Ashok Nagar, Udaipur,<br>Rajasthan 313001</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Store Hours</h4>
+                            <p>Monday - Saturday: 10:00 AM - 9:00 PM<br>Sunday: 11:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Contact</h4>
+                            <p>+91 98765 43210<br>hello@craftee.in</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>support@craftee.in<br>orders@craftee.in</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://maps.google.com" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+            </div>
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.6898066548684!2d73.71239831500677!3d24.58535198420577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56c6b4e3a5d%3A0x6f3c7f8b9c5c5c5c!2sShastri%20Circle%2C%20Udaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>JOIN THE CRAFTEE CREW</h2>
+            <p>Subscribe for exclusive drops, early access to new collections, and special discounts!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">CRAFT<span>EE</span></a>
+                <p>Bold, Minimal, and Aesthetic Streetwear for the New Generation. Express your attitude with premium-quality graphic tees that speak personality.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns & Exchange</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 CRAFTEE. All Rights Reserved. Made with ❤️ in Udaipur</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-google-pay"></i>
+                <i class="fab fa-apple-pay"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
